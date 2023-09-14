@@ -1,5 +1,12 @@
 <?php
 include "./functions.php";
+
+$alfabeto = ["A","B","C","D","E","F","G","H","I","L","M","N","O","P","Q","S","T","U","V","W","X","Y","Z","K","J",];
+$numeri = "0123456789";
+
+$tutti_caratteri = $alfabeto . $numeri;
+$lunghezza_totale = strlen($tutti_caratteri);
+$passoword = '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
