@@ -7,6 +7,13 @@ $numeri = "0123456789";
 $tutti_caratteri = $alfabeto . $numeri;
 $lunghezza_totale = strlen($tutti_caratteri);
 $passoword = '';
+$lunghezza_passowrd = 10;
+for ($i = 0; $i < $lunghezza_passowrd; $i++){
+    $indice = rand(0, $lunghezza_totale -1);
+    $passoword .= $tutti_caratteri[$indice];
+};
+
+echo $passoword
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +31,7 @@ $passoword = '';
     </head>
 
 <body>
-    <h1>prova <?php echo $cciao ?></h1>
+    <h1>prova <?php echo $passoword ?></h1>
     <form action="" method="get">
         <div class="container">
             <label for="lunghezzaPassword">lunghezza della Password</label>
